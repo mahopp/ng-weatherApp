@@ -1,0 +1,11 @@
+<h1>{{weatherData.name}}</h1>
+<table>
+    <tr>
+        <td ng-repeat="(key,value) in weatherData.main">{{key}}</td>
+    </tr>
+    <tr>
+        <td ng-repeat="(key,value) in weatherData.main">{{value}}</td>
+    </tr>
+</table>
+
+<ng-map center="[{{weatherData.coord.lat}},{{weatherData.coord.lon}}]"></ng-map>

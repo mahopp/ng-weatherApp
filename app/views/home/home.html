@@ -1,0 +1,8 @@
+<button ng-repeat="navitem in navi" ng-click="openUrl(navitem.url)">{{navitem.name}}</button>
+
+
+
+<div class="ss" ng-class="{open:toggle}">
+    <div class="sstoggle" ng-click="toggle=!toggle">TOGGLE</div>
+    <div class="sscontent">CONTENT</div>
+</div>
